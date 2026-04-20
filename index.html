@@ -1,1 +1,94 @@
+<!-- Unit 11 Project
+Requirements
+[ yes ] $() Select by Element, ID AND Class 
+[ yes ] Use Three Different jQuery Methods 
+[ yes ] Add Five CSS Declarations
+[  ] Include Three Images
+
+Select ONE Additional 
+[ no ] Feature 1 - Use .hide() & .show() method
+[ no ] Feature 2 - Use .addClass() method
+[ yes ] Feature 3 - Use .slideDown() method
+[ no ] Feature 4 - Use .mouseover() method
+[ no ] Feature 5 - Use .fadeIn() method
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Unit 11 Project</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Faculty+Glyphic&family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+
+  </head>
+  <body>
+
+    <h1>My Top 3 Memories of This Year</h1>
+
+    
+    <div class="container">
+    <div id="mem1flip" class="memhead">Boston Day Trip</div>
+
+    <div id="mem2flip" class="memhead">Halloween</div>
+
+    <div id="mem3flip" class="memhead" >Bowling</div>
+    
+    </div>
+    <div class="container">
+    <div id="mem1panel" class="memtitle" class="memhead">In March, five of my friends and I took a bus visited Boston for a day. We walked around the city and took the subway, visiting places like the Boston Museum of Fine Arts, the Boston Public Library, Faneuil Hall marketplace (where we got food), and the various statues and buildings around the city. We had so much fun and nearly missed our bus back to NY.
+
+    </div>
+
+    <div id="mem2panel" class="memtitle" class="memhead">On Halloween, me and some of my friends were wearing matching costumes and we walked around Manhatten seeing others in costumes and went into a extremely scary haunted house where I genuienly thought they were going to kill me.</div>
+
+    <div id="mem3panel" class="memtitle" class="memhead">In April me and two of my friends spent the day getting food in Flushing and then going bowling. I sucked and lost every round but it was still super fun.</div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>
+
+      
+
+      $(document).ready(function(){
+        $("#mem1flip").click(function(){
+        $("#mem1panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#mem2flip").click(function(){
+        $("#mem2panel").slideDown("slow");
+        });
+      });
+
+      $(document).ready(function(){
+        $("#mem3flip").click(function(){
+        $("#mem3panel").slideDown("slow");
+        });
+      });
+
+      $("h1").css("text-align", "center");
+      $("h1").css("color", "#389981");
+
+      $("#mem1flip").css("margin-top", "50px");
+      $("#mem2flip").css("margin-top", "50px");
+      $("#mem3flip").css("margin-top", "50px");
+
+      $(".memtitle").css("background", "linear-gradient(#ffcec5, #ffabab)")
+
+
+
+
+
+    </script>
+  </body>
+</html>
+
+<!--- Taken From Khan Academy HTML/JS: Making webpages interactive with jQuery-->
+
 

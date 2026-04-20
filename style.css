@@ -1,1 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Delius&family=Poetsen+One&display=swap");
+
+/* ======================== CSS Rule #1 */
+html {
+  background-color: #e9fffa;
+}
+
+
+/* ======================== CSS Rule #2 */
+h1 {
+  font-family: "Macondo Swash Caps", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  margin-top: 50px;
+}
+
+#mem1flip, #mem2flip, #mem3flip {
+  font-family: "Amarante", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.container {
+  display: flex;
+}
+
+.memtitle {
+  padding: 5px;
+}
+
+#mem1flip, #mem2flip, #mem3flip {
+  width: 100%;
+  background-color: #389981; 
+  color: #ffcec5;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+#mem1panel, #mem2panel, #mem3panel {
+  padding: 50px;
+  display: none;
+  background-color: #ffcec5;
+  color: #389981;
+  width: 28vw;
+  height: 400px;
+  text-align: center;
+  font-family: "Faculty Glyphic", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#mem3panel {
+  position: absolute;
+  right: 8px;
+}
+
+#mem1panel {
+  position: absolute;
+  left: 8px;
+}
+
+#mem2panel {
+  position: absolute;
+  left: 33.5vw;
+}
+
+
 
